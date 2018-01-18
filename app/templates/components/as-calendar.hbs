@@ -1,8 +1,10 @@
 {{#if showHeader}}
-  {{as-calendar/header 
-    title=title 
-    model=model 
-    onNavigateWeek=(action "onNavigateWeek")}}
+  {{as-calendar/header
+    title=title
+    model=model
+    onGoToCurrentWeek=(action "onGoToCurrentWeek")
+    onNavigateWeek=(action "onNavigateWeek")
+  }}
 {{/if}}
 
 {{#as-calendar/timetable

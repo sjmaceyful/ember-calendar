@@ -44,6 +44,13 @@ export default Ember.Component.extend({
       if (this.attrs['onNavigateWeek']) {
         this.attrs['onNavigateWeek'](index);
       }
+    },
+
+    onGoToCurrentWeek: function() {
+      if (this.attrs['onGoToCurrentWeek']) {
+        this.attrs['onGoToCurrentWeek']();
+      }
     }
+
   }
 });
